@@ -1,5 +1,4 @@
 from typing import Tuple
-from vkbottle.api import API
 import requests
 from datetime import datetime
 from bs4 import BeautifulSoup as BS
@@ -8,7 +7,7 @@ from vkbottle.dispatch.rules.base import CommandRule
 
 def days():
 	date1 = datetime.now()
-	date2 = datetime(day=2, month=6, year=2022)
+	date2 = datetime(day=3, month=3, year=2023)
 	countdown = date2 - date1
 	n = countdown.days
 	days = ['день', 'дня', 'дней']
